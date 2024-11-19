@@ -1,0 +1,92 @@
+.game_board {
+  width: 300px;
+  height: 300px;
+  outline: 1px solid #454545;
+  border-radius: 8px;
+  background: #313131;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.win_0_1_2 {
+  height: 6px;
+  width: 280px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 158px;
+  left: 220px;
+}
+
+.win_3_4_5 {
+  height: 6px;
+  width: 280px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 248px;
+  left: 220px;
+}
+
+.win_6_7_8 {
+  height: 6px;
+  width: 280px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 338px;
+  left: 220px;
+}
+
+.win_0_3_6 {
+  height: 280px;
+  width: 6px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 110px;
+  left: 268px;
+}
+
+.win_1_4_7 {
+  height: 280px;
+  width: 6px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 110px;
+  left: 358px;
+}
+
+.win_2_5_8 {
+  height: 280px;
+  width: 6px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top: 110px;
+  left: 448px;
+}
+
+.win_0_4_8 {
+  height: 6px;
+  width: 385px;
+  border-radius: 6px;
+  transform: rotate(45deg);
+  background: #fff;
+  position: absolute;
+  top: 247px;
+  left: 168px;
+}
+
+.win_2_4_6 {
+  height: 6px;
+  width: 385px;
+  border-radius: 6px;
+  transform: rotate(-45deg);
+  background: #fff;
+  position: absolute;
+  top: 247px;
+  left: 168px;
+}

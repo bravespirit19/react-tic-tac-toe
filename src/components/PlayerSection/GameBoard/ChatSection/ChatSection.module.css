@@ -1,0 +1,112 @@
+.chat_section {
+  margin: 38px 0 0 0;
+  border: 1px solid #454545;
+  border-radius: 8px 8px 0 0;
+  width: 640px;
+  height: 483px;
+  background: #313131;
+}
+
+.interlocutor {
+  display: flex;
+  align-items: center;
+  border: 1px solid #454545;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 50px;
+  background: #222;
+  padding: 0 8px;
+
+  .interlocutor_avatar {
+    margin: 0 8px 0 0;
+  }
+
+  .interlocutor_name {
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+}
+
+.chat {
+  position: relative;
+  padding: 0 0 12px 20px;
+  .messages {
+    display: flex;
+    flex-direction: column;
+    height: 349px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+
+    > div:last-child {
+      scroll-snap-align: end;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px
+    }
+    
+    .own_message {
+      margin: 12px 20px 12px 100px;
+      align-self: flex-end;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: start;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background: #00ae1c;
+      overflow-wrap: anywhere;
+      font-size: 16px;
+      line-height: 125%;
+      color: #fff;
+    }
+
+    .other_message {
+      margin: 12px 100px 12px 0;
+      align-self: flex-start;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: start;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background: #737373;
+      overflow-wrap: anywhere;
+      font-size: 16px;
+      line-height: 125%;
+      color: #fff;
+    }
+    .message_time {
+      font-size: 12px;
+      line-height: 133%;
+      margin: 4px 0 0 0;
+      align-self: flex-end;
+    }
+  }
+
+  .messages_input {
+    input {
+      position: absolute;
+      top: 360px;
+      border: 1px solid #8b8b8b;
+      border-radius: 8px;
+      padding: 8px 54px 8px 16px;
+      width: 600px;
+      height: 56px;
+      background: #424242;
+      font-size: 16px;
+      line-height: 125%;
+      color: #fff;
+    }
+    input::placeholder {
+      color: #fff;
+    }
+
+    .send_message {
+      cursor: pointer;
+      position: absolute;
+      top: 378px;
+      right: 36px;
+    }
+  }
+}
